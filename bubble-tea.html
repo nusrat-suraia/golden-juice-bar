@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bubble Tea · Golden Juice Bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+    body { background: #fef9f2; color: #2d1f14; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    .navbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #eddccb; }
+    .logo { display: flex; align-items: center; gap: 8px; font-size: 1.6rem; font-weight: 700; color: #b8863d; }
+    .logo i { font-size: 2rem; color: #d9a353; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 28px; font-weight: 500; }
+    .nav-links a { text-decoration: none; color: #3d2b1b; transition: 0.2s; font-size: 1rem; }
+    .nav-links a:hover { color: #b8863d; }
+    .nav-links .order-btn { background: #b8863d; color: #fff; padding: 8px 20px; border-radius: 40px; font-weight: 600; }
+    .nav-links .order-btn:hover { background: #9f6f2c; color: #fff; }
+    
+    .page-header { text-align: center; padding: 40px 0 20px; }
+    .page-header h1 { font-size: 3rem; color: #1f130b; }
+    .page-header p { color: #6b4f37; font-size: 1.2rem; }
+    .back-link { display: inline-block; margin: 20px 0; color: #b8863d; text-decoration: none; font-weight: 600; }
+    .back-link:hover { text-decoration: underline; }
+    
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin: 30px 0 50px; }
+    .menu-item { background: #fffaf5; border-radius: 28px; padding: 25px; border: 1px solid #f0e0d1; transition: 0.3s; }
+    .menu-item:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(184,134,61,0.1); border-color: #d9a353; }
+    .menu-item i { font-size: 2.5rem; color: #b8863d; margin-bottom: 10px; }
+    .menu-item h3 { font-size: 1.3rem; margin: 8px 0; }
+    .menu-item .price { color: #b8863d; font-weight: 700; font-size: 1rem; }
+    .menu-item p { color: #5a4130; line-height: 1.5; font-size: 0.95rem; }
+    .menu-item .tag { display: inline-block; background: #f0e0d1; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; color: #5a4130; margin-top: 8px; }
+    
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 30px 0 20px; border-top: 1px solid #eddccb; margin-top: 20px; gap: 20px; }
+    .footer-col { min-width: 140px; }
+    .footer-col h5 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; color: #1f130b; }
+    .footer-col a { display: block; text-decoration: none; color: #5a4130; margin-bottom: 8px; font-size: 0.95rem; transition: 0.15s; }
+    .footer-col a:hover { color: #b8863d; }
+    .copyright { text-align: center; padding: 24px 0 10px; color: #6b4f37; font-size: 0.9rem; border-top: 1px solid #eddccb; margin-top: 10px; }
+    
+    @media (max-width: 700px) {
+      .navbar { flex-direction: column; gap: 16px; }
+      .nav-links { justify-content: center; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="logo">
+        <i class="fas fa-crown"></i>
+        <span>Golden Juice Bar</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="order-btn"><i class="fas fa-shopping-bag" style="margin-right:6px;"></i>Order Now</a>
+      </div>
+    </header>
+
+    <div class="page-header">
+      <a href="menu.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Menu</a>
+      <h1>🧋 Bubble Tea</h1>
+      <p>Premium teas with chewy tapioca pearls, fresh fruit, and creamy toppings</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item">
+        <i class="fas fa-mug-saucer"></i>
+        <h3>Classic Milk Tea</h3>
+        <div class="price">£4.50</div>
+        <p>Rich black tea with creamy milk and sweet tapioca pearls.</p>
+        <span class="tag">⭐ Most Popular</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-seedling"></i>
+        <h3>Matcha Latte</h3>
+        <div class="price">£5.50</div>
+        <p>Premium Japanese matcha with oat milk and honey boba.</p>
+        <span class="tag">🌿 Vegan</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-candy-cane"></i>
+        <h3>Brown Sugar Boba</h3>
+        <div class="price">£5.00</div>
+        <p>Caramelized brown sugar syrup with creamy milk and chewy pearls.</p>
+        <span class="tag">🔥 Best Seller</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-tint"></i>
+        <h3>Taro Milk Tea</h3>
+        <div class="price">£5.00</div>
+        <p>Sweet taro root flavor with a beautiful purple hue and creamy texture.</p>
+        <span class="tag">🌈 Signature</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-lemon"></i>
+        <h3>Passionfruit Green Tea</h3>
+        <div class="price">£4.80</div>
+        <p>Refreshing green tea with passionfruit, aloe vera, and popping boba.</p>
+        <span class="tag">🍊 Fruity</span>
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-strawberry"></i>
+        <h3>Strawberry Milk</h3>
+        <div class="price">£5.20</div>
+        <p>Fresh strawberry puree with milk, topped with strawberry popping pearls.</p>
+        <span class="tag">🍓 Seasonal</span>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Our Products</h5>
+        <a href="bubble-tea.html">Bubble Tea</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="fruit-juice.html">Fruit Juices</a>
+        <a href="coffee.html">Turkish Coffee</a>
+      </div>
+      <div class="footer-col">
+        <h5>Visit us</h5>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Find a store</a>
+        <a href="contact.html"><i class="fas fa-truck"></i> Delivery</a>
+        <a href="contact.html"><i class="fas fa-gift"></i> Golden rewards</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p><i class="fas fa-crown" style="color:#b8863d; margin-right:6px;"></i> Golden Juice Bar · Bubble tea paradise</p>
+    </div>
+  </div>
+</body>
+</html>
