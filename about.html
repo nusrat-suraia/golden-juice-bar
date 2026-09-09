@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us · Golden Juice Bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+    body { background: #fef9f2; color: #2d1f14; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    .navbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #eddccb; }
+    .logo { display: flex; align-items: center; gap: 8px; font-size: 1.6rem; font-weight: 700; color: #b8863d; }
+    .logo i { font-size: 2rem; color: #d9a353; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 28px; font-weight: 500; }
+    .nav-links a { text-decoration: none; color: #3d2b1b; transition: 0.2s; font-size: 1rem; }
+    .nav-links a:hover { color: #b8863d; }
+    .nav-links .order-btn { background: #b8863d; color: #fff; padding: 8px 20px; border-radius: 40px; font-weight: 600; }
+    .nav-links .order-btn:hover { background: #9f6f2c; color: #fff; }
+    
+    .page-header { text-align: center; padding: 50px 0 30px; }
+    .page-header h1 { font-size: 3rem; color: #1f130b; }
+    .page-header p { color: #6b4f37; font-size: 1.2rem; max-width: 700px; margin: 10px auto; }
+    
+    .about-content { max-width: 800px; margin: 0 auto 60px; line-height: 1.8; font-size: 1.05rem; color: #3d2b1b; }
+    .about-content h2 { color: #b8863d; margin: 30px 0 15px; }
+    .about-content .highlight { background: #fcf5ed; padding: 30px; border-radius: 20px; border-left: 5px solid #b8863d; margin: 20px 0; }
+    
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 30px 0 20px; border-top: 1px solid #eddccb; margin-top: 20px; gap: 20px; }
+    .footer-col { min-width: 140px; }
+    .footer-col h5 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; color: #1f130b; }
+    .footer-col a { display: block; text-decoration: none; color: #5a4130; margin-bottom: 8px; font-size: 0.95rem; transition: 0.15s; }
+    .footer-col a:hover { color: #b8863d; }
+    .copyright { text-align: center; padding: 24px 0 10px; color: #6b4f37; font-size: 0.9rem; border-top: 1px solid #eddccb; margin-top: 10px; }
+    
+    @media (max-width: 700px) {
+      .navbar { flex-direction: column; gap: 16px; }
+      .nav-links { justify-content: center; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="logo">
+        <i class="fas fa-crown"></i>
+        <span>Golden Juice Bar</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="order-btn"><i class="fas fa-shopping-bag" style="margin-right:6px;"></i>Order Now</a>
+      </div>
+    </header>
+
+    <div class="page-header">
+      <h1>Our Story</h1>
+      <p>Bringing authentic, handcrafted beverages to the heart of London</p>
+    </div>
+
+    <div class="about-content">
+      <div class="highlight">
+        <i class="fas fa-quote-left" style="color:#b8863d; font-size:2rem; opacity:0.5;"></i>
+        <p style="font-size:1.1rem; font-weight:500;">"We believe that great drinks start with quality ingredients and a passion for flavor."</p>
+      </div>
+
+      <h2>✨ Our Mission</h2>
+      <p>Golden Juice Bar was born from a simple idea: to create a space where Londoners can enjoy authentic, freshly made beverages that are as good for you as they are delicious. We combine traditional recipes with modern twists, using only natural ingredients.</p>
+
+      <h2>🌍 Our Journey</h2>
+      <p>Founded in 2024, Golden Juice Bar started as a small stall in a London market. Our commitment to quality and flavor quickly gained a loyal following. Today, we're proud to serve our community from our flagship location at 802 Iona Tower.</p>
+
+      <h2>💛 What Makes Us Golden</h2>
+      <ul style="list-style:none; padding:0;">
+        <li style="padding:10px 0; border-bottom:1px solid #f0e0d1;"><i class="fas fa-check-circle" style="color:#b8863d; margin-right:10px;"></i> 100% natural ingredients — no artificial syrups or preservatives</li>
+        <li style="padding:10px 0; border-bottom:1px solid #f0e0d1;"><i class="fas fa-check-circle" style="color:#b8863d; margin-right:10px;"></i> Traditional preparation methods, from hand-pressed juices to sand-brewed coffee</li>
+        <li style="padding:10px 0; border-bottom:1px solid #f0e0d1;"><i class="fas fa-check-circle" style="color:#b8863d; margin-right:10px;"></i> A warm, welcoming space where everyone feels at home</li>
+        <li style="padding:10px 0;"><i class="fas fa-check-circle" style="color:#b8863d; margin-right:10px;"></i> Sustainable practices — we use eco-friendly cups and source locally when possible</li>
+      </ul>
+
+      <h2>📍 Visit Us</h2>
+      <p>802 Iona Tower, 33 Ross Way, London<br>
+      Open daily: 9am – 9pm</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Our Products</h5>
+        <a href="bubble-tea.html">Bubble Tea</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="fruit-juice.html">Fruit Juices</a>
+        <a href="coffee.html">Turkish Coffee</a>
+      </div>
+      <div class="footer-col">
+        <h5>Visit us</h5>
+        <a href="contact.html"><i class="fas fa-map-pin"></i> Find a store</a>
+        <a href="contact.html"><i class="fas fa-truck"></i> Delivery</a>
+        <a href="contact.html"><i class="fas fa-gift"></i> Golden rewards</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p><i class="fas fa-crown" style="color:#b8863d; margin-right:6px;"></i> Golden Juice Bar · Handcrafted with love</p>
+    </div>
+  </div>
+</body>
+</html>
